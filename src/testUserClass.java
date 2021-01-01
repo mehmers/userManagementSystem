@@ -33,6 +33,19 @@ class testUserClass {
     String user1s = user1.toString();
     System.out.println("\nYour account created successfully !\n" + user1s);
 
+    System.out.print("\nLogin your account.\nEnter username : ");
+    String loginUsername = input.next();
+    System.out.print("\nEnter password : ");
+    String loginPassword = input.next();
+
+    boolean isCorrect = user1.login(loginUsername, loginPassword);
+    if(isCorrect){
+      System.out.println("You have successfully logged in");
+    }
+    else{
+      System.out.println("You entered wrong username or password.");
+    }
+
     System.out.print("Enter random password length : ");
     int newPasswordLength1 = input.nextInt();
     while(newPasswordLength1 < 6 || newPasswordLength1 > 100){
@@ -43,5 +56,6 @@ class testUserClass {
     System.out.println("\nUpdated account details are : ");
     String newUser1s = user1.toString();
     System.out.println(newUser1s);
+
     }
 }
