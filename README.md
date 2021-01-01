@@ -3,7 +3,7 @@ User management system written in Java.
 
 # Features :
 
---> Create an account with username,password and email. (There are some restrictions.)\n
+--> Create an account with username,password and email. (There are some restrictions.)
 --> Change username,password and email.
 --> Get username,password and email.
 --> Overrided toString() method.
